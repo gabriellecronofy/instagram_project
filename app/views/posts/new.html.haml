@@ -1,0 +1,11 @@
+= form_with model: @post, local: true, html: { multipart: true } do |f|
+  .field
+    = f.label :image
+    = f.file_field :image
+
+  .field
+    = f.label :caption
+    = f.text_field :caption
+
+  .actions
+    = f.submit
