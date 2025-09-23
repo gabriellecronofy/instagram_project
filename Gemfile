@@ -29,6 +29,7 @@ gem "jbuilder"
 
 gem "haml"
 gem "image_processing", "~> 1.2"
+gem "ruby-vips"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
