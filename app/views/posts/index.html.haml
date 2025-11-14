@@ -1,10 +1,8 @@
-%h1 Instagram
-
 .posts-wrapper.row
   - @posts.each do |post|
     .post
       .post-head
-        .name Gabby
+        .name Gabsfinnegan
       .image
         = link_to post_path(post) do
           = image_tag post.image.variant(resize_to_limit: [500, 500]), class: 'img-responsive center-block'

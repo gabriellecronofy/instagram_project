@@ -1,0 +1,9 @@
+.posts-wrapper.row
+  .post
+    .post-head
+      .name Gabsfinnegan
+    .image
+      = link_to post_path(@post) do
+        = image_tag @post.image.variant(resize_to_limit: [500, 500]), class: 'img-responsive center-block'
+      %p.caption
+        = @post.caption
