@@ -7,8 +7,8 @@ class Post < ApplicationRecord
   private def image_type
     return unless image.attached?
 
-    if !image.content_type.in?(%w[image/png image/jpg image/jpeg image/gif])
-      errors.add(:image, 'must be a PNG, JPG, JPEG, or GIF file')
+    if !image.content_type.in?(%w[image/png image/jpg image/jpeg image/gif image/avif])
+      errors.add(:image, 'must be a PNG, JPG, JPEG, AVIF or GIF file')
     end
   end
 end
